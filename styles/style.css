@@ -31,13 +31,13 @@
 .nav-container{
     display: flex;
     padding: 20px 40px;
-      width: 100vw;
-     flex-direction: row;
-     justify-content: space-between;
-     align-items: center;
-     top: 0;
-     right: 0;
-     z-index: 3;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    right: 0;
+    z-index: 3;
 }
 
 
@@ -60,6 +60,7 @@
 .content-header a{
     text-decoration: none;
 }
+
 .btn-menu{
     display: none;
 }
@@ -67,12 +68,12 @@
 .hero-container{
     /* width: 100vw; */
     display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   color: var(--colorfont);
-   gap: 20px;
-   align-items: center;
-   padding: 36px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--colorfont);
+    gap: 20px;
+    align-items: center;
+    padding: 36px 0;
 }
 
 .hero-container--text{
@@ -111,6 +112,12 @@
     color: white;
     border-radius: 5px;
 }
+
+.hero-container button a{
+    color: white;
+    text-decoration: none;
+}
+
 
 .hero-container svg{
     margin: 1px;    
@@ -266,37 +273,111 @@ a:hover{
     flex-direction: Column;
     justify-content: space-between;
     background-color: #f5f6ff;
+    width: 100%;
     padding: 56px;
 }
-.icon-container{
+.social-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 } 
 .social-icon{
     display: flex;
-    flex-direction: row;
+    justify-content: flex-end;
+    gap: 16px;
+   
 }
 
-.cards-politics-container{
+.payment-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 20px;
+    width: 100%;
+}
+
+.payment-container-cards{
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    width: 100%;
+}
+.cards-container img{
+    width: 60px;
+    height: 40px;
+    border: 1px solid #d5dfff;
+}
+.cards-container{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
 }
 
-.cards-politics-container ul{
+.payment-container-cards a{
+    text-decoration: none;
+}
+
+.politics-container{
     display: flex;
+    flex-direction: row;
+    gap: 16px;  
 }
 
-.cards-politics-container div a{
-    font-family: var(--primary-color-500);
+.politics-container a{
+    text-decoration: none;
 }
+
 .legals-container{
     display: flex;
     justify-content: space-between;
     font-family: #f5f6ff;
+    font-size: 14px;
     padding: 20px;
     border-top: 2px solid #d6e0ff;
+}
+
+@media screen and (max-width: 750px){
+    .social-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .social-icon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 16px;
+    }
+    
+
+    .payment-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;        
+    }
+
+    .cards-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100px;
+    }
+
+    .legals-container{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
 }
 
 .chat-kodee{
